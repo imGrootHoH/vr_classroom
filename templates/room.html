@@ -61,6 +61,14 @@
 </head>
 
 <body>
+    
+	<form action="/teacher" target="_blank"><input type="submit" name="Teacher"
+            value="teacher">Teacher
+        </form>
+        <form  action="/student" target="_blank"> <input type="submit" name="Student"
+            value="Student">Student        
+        </form>
+    
     <article>
 
         <table class="visible">
@@ -85,7 +93,7 @@
         <script src="https://cdn.webrtc-experiment.com/audio-broadcast/broadcast-ui.js"> </script>
     </article>
     <article>
-
+ 
         <script>
             if (localStorage.getItem("key").includes("student")) {
                 document.getElementById("start-conferencing").style.visibility = "hidden";
@@ -97,8 +105,9 @@
 
 
 
-        <!-- commits.js is useless for you! -->
+        
         <script src="https://cdn.webrtc-experiment.com/commits.js" async> </script>
+       
 </body>
 
 </html>

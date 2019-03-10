@@ -83,7 +83,7 @@
 <script>
   function teacher() {
     var x = document.getElementById("teacher");
-
+console.log("hello");
     let data = x.value;
     localStorage.setItem("key", data);
   }
@@ -99,23 +99,22 @@
     <div class="welcome">
       <h1 style="font-size: 5em">Welcome to Virtual Classroom</h1>
 
-      <div class="buttonDiv">
-<<<<<<< 4fcd335f69abf4093b39608de02fff7dc3200372:index.html
-        <a href="webrtc/index.html"><button onclick="teacher()" class="button button1" id="teacher"
+      <div class="buttonDiv" >
+        <form  action="/room"><input type="submit" name="Teacher" value=""> <button target="_blank" onclick="teacher()" class="button button1" id="teacher"
             value="teacher">Teacher</button>
-        </a>
-        <a href="webrtc/index.html"> <button onclick="student()" class="button button1" id="student"
+        </form>
+ 
+        <form  action="/room"> <button target="_blank" onclick="student()" class="button button1" id="student"
             value="student">Student</button>
-        </a>
-=======
+        </form>
+
         <!-- <a href="vr.html"><button class="button button1">Teacher</button>
         </a> -->
-          <form action="/teacher" ><input type="submit" value="Teacher" name="Teacher" class="button button1"></input>
+      <!--     <form action="/teacher" ><input type="submit" value="Teacher" name="Teacher" class="button button1"></input>
         </form>
       
+         -->
         
-        <button class="button button2">Student</button>
->>>>>>> Environment designed:templates/index.html
       </div>
     </div>
 

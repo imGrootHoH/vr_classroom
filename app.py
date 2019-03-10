@@ -10,7 +10,7 @@ def index():
 
 
 @app.route('/room')
-def index():
+def room():
 	return render_template('room.html')
 
 
@@ -20,7 +20,7 @@ def teacher():
 
 
 @app.route('/student')
-def teacher():
+def student():
 	return render_template('s_view.html')
 
 
