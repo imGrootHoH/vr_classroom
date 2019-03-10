@@ -65,6 +65,19 @@
 
   }
 </style>
+<script>
+  function teacher() {
+    var x = document.getElementById("teacher");
+
+    let data = x.value;
+    localStorage.setItem("key", data);
+  }
+  function student() {
+    var x = document.getElementById("student");
+    let data = x.value;
+    localStorage.setItem("key", data);
+  }
+</script>
 
 <body>
   <div id="container">
@@ -72,10 +85,12 @@
       <h1 style="font-size: 5em">Welcome to Virtual Classroom</h1>
 
       <div class="buttonDiv">
-        <a href="/teacher"><button class="button button1">Teacher</button>
+        <a href="webrtc/index.html"><button onclick="teacher()" class="button button1" id="teacher"
+            value="teacher">Teacher</button>
         </a>
-        &nbsp&nbsp&nbsp&nbsp&nbsp
-        <button class="button button1">Student</button>
+        <a href="webrtc/index.html"> <button onclick="student()" class="button button1" id="student"
+            value="student">Student</button>
+        </a>
       </div>
     </div>
 
