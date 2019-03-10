@@ -64,6 +64,21 @@
 
 
   }
+  .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid powderblue;
+    size: 3em;
+    
+
+  }
+
+  .button2:hover {
+    background-color: powderblue;
+    color: white;
+    border-color: white;
+  }
+
 </style>
 <script>
   function teacher() {
@@ -85,12 +100,22 @@
       <h1 style="font-size: 5em">Welcome to Virtual Classroom</h1>
 
       <div class="buttonDiv">
+<<<<<<< 4fcd335f69abf4093b39608de02fff7dc3200372:index.html
         <a href="webrtc/index.html"><button onclick="teacher()" class="button button1" id="teacher"
             value="teacher">Teacher</button>
         </a>
         <a href="webrtc/index.html"> <button onclick="student()" class="button button1" id="student"
             value="student">Student</button>
         </a>
+=======
+        <!-- <a href="vr.html"><button class="button button1">Teacher</button>
+        </a> -->
+          <form action="/teacher" ><input type="submit" value="Teacher" name="Teacher" class="button button1"></input>
+        </form>
+      
+        
+        <button class="button button2">Student</button>
+>>>>>>> Environment designed:templates/index.html
       </div>
     </div>
 
